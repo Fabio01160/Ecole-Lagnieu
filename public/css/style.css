@@ -1,0 +1,1231 @@
+/*
+	DEMO STYLE
+*/
+@import url(http://fr.allfont.net/allfont.css?fonts=little-days-alt);
+@import "https://fonts.googleapis.com/css?family=Avenir:300,400,500,600,700";
+
+@font-face{
+	font-family:'Little Days Alt';
+	src: "{{ url('fonts/Little Days Alt.ttf') }}";
+}
+
+body 
+{
+	background: #ffffff;
+}
+
+p 
+{
+	font-family: 'Avenir', sans-serif;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #000;
+}
+
+h1
+{
+	font-family: 'Little Days Alt', arial;
+	text-align: center;
+}
+
+hr
+{
+  margin-top:1%;
+}
+
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+}
+
+.navbar {
+	background-color :  rgb(182,30,123);
+	border: none;
+	border-radius: 0;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.navbar p {
+	color : white;
+	display: inline;
+	padding-right: 4%;
+	font-size: 0.9em;
+}
+
+.littleDays
+{
+	font-family: 'Little Days Alt', arial;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #339A99;
+}
+
+.avenir
+{
+	font-family: 'Avenir';
+	font-size: 0.75em;
+	color: #339A99;
+}
+
+i
+{
+	margin-right: 10px;
+	color: #ffff;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.lightgrey
+{
+	background-color: lightgrey;
+}
+
+i.rond
+{
+	border-radius: 100%;
+	border: 1px solid rgb(200,200,200);
+	padding: 8px;
+	border-spacing: 5px;
+}
+
+
+/* ---------------------------------------------------
+	SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar
+{
+	background: #ffffff;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	margin-top : -6%;
+}
+
+.sidebar-header 
+{
+	background: #ffff;
+	color : #339A99;
+	padding: 20px;
+	margin-bottom: -10%;
+	margin-top:-6.1%;
+	background-color: #ffffff;
+}
+
+#sidebar ul.components 
+{
+	padding: 20px 0;
+	border-bottom: 1px solid #339A99;
+	background-color: #ffffff;
+}
+
+#sidebar hr
+{
+	border : 1.7px solid #339A99;
+	margin-top: 5%;
+	margin-right: 10%;
+	margin-left: 8%;
+	margin-bottom: 0%;
+}
+
+#sidebar h3
+{
+	background-color: #ffffff;
+	color:#339A99; 
+	display: block;
+	font-size: 1.5em;
+	margin-right: 10%;
+	margin-left: 6%;
+	padding: 10px;  
+}
+
+#sidebar li
+{
+	color:black;
+	display: block;
+	font-size: 1.1em;
+	margin-right: 10%;
+	padding-bottom: 2%;
+	padding-left: 17%;
+	padding-top: 1%;
+	width: 100%;
+}
+
+#sidebar li:hover:not(.noHover)
+{
+	background-color:  #339A99;
+	color: white;
+}
+
+#homeSubmenu, #lifeInSchoolSubmenu, #redTapeSubmenu , #classroomSubmenu li
+{
+	font-size: 0.9em;
+}
+
+#homeSubmenu, #lifeInSchoolSubmenu, #redTapeSubmenu, #classroomSubmenu
+{
+	background-image: linear-gradient(to top, #e0e0e0, #f3fbfa);
+	margin-right: 10%;
+	margin-left: 8%;
+	padding-bottom: 2%;
+	padding-top: 1%;
+}
+
+.superSubmenu:hover
+{
+	background: white;
+}
+
+a[data-toggle="collapse"]
+{
+	position: relative;
+}
+
+a[aria-expanded="false"]::before
+{
+	float: right;
+	content: '\002b';/* + */
+	display: inline;
+	font-size : 1em;
+	border-radius: 50px;
+	border: 1px solid rgb(200,200,200);
+	padding-left: 6px;
+	padding-right: 6px;
+	color : white;
+	background-color: #339A99;
+}
+
+a[aria-expanded="true"]::before {
+	float : right;
+	content: '\2212';
+	display: block;
+	font-size : 1em;
+	border-radius: 50px;
+	border: 1px solid rgb(200,200,200);
+	padding-left: 6px;
+	padding-right: 6px;
+	border-spacing: 5px;
+	color : white;
+	background-color: #339A99;
+}
+
+	.menuButton
+	{
+		font-size: 0.9em;
+	}
+
+
+/*a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+	content: '\e259';
+	display: block;
+	position: absolute;
+	right: 20px;
+	font-family: 'Glyphicons Halflings';
+	font-size: 0.6em;
+}
+
+a[aria-expanded="true"]::before {
+	content: '\e260';
+}*/
+
+
+/* ---------------------------------------------------
+	"HEAD" STYLE
+----------------------------------------------------- */
+
+.conteneur
+{
+	display:flex;
+	height: auto;
+}
+
+#logo
+{
+	top: -30%;
+	height:235% !important;
+	left: -24%;
+	position: absolute;
+	width:61% !important;
+	z-index:18;
+	background-size: 10%;
+	border-radius: 0.1em;
+}
+
+#enveloppe
+{
+	background-color: rgb(249,190,63);
+	color : white;
+	font-size: 2em;
+	border-radius: 100%;
+	padding: 20px;
+	position : absolute;
+	left : 35%;
+	top: 55%;
+	z-index: 5;
+}
+
+#leftSide
+{
+	background: rgb(27,156,135);
+}
+
+#searchbar
+{
+	border-radius: 5px;
+	height: 40px;
+	margin-left:70%;
+	margin-top:10%;
+	margin-bottom: 8.4%;
+	width: 350px;
+}
+
+#rightSide
+{
+	background-color : rgb(249,190,63);
+}
+
+#rightSide a
+{
+	color: white;
+	font-size : 0.9em;
+	margin-left: 25%;
+}
+
+#rightSide h3
+{
+	color: white;
+	margin-bottom: 2%;
+	margin-left: 25%;
+	margin-top : 5.6%;
+	font-size: 1.5em;
+}
+
+.fa-calendar-alt
+{
+	background-color: rgb(182,30,123);
+	border-radius: 100%;
+	color : white;
+	font-size: 4.5em;
+	margin-left: -8%;
+	margin-top: -3%;
+	padding: 30px;
+}
+
+.fa-user
+{
+	background-color: white;
+	bottom : 23%;
+	color: rgb(249,190,63);
+	font-size: 1.7em;
+	margin-left: -3.5%;
+	padding: 35px;
+	position: absolute;
+}
+
+.cartouche
+{
+	width: 85%;
+	border-radius : 5px;
+	margin-bottom: 2.5%;
+}
+
+.navbar
+{
+	margin-bottom: -1%;
+	min-height: 30px;
+	padding-top: 2px;
+}
+
+/* ---------------------------------------------------
+	CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+	min-height: 100vh;
+	padding-left: 10px;
+	padding-top: 21px;
+	transition: all 0.3s;
+	max-width: 100vw;
+}
+
+h1
+{
+	color :rgb(182,30,123);
+	font-family: 'Little Days Alt', arial;
+	font-size: 3.5em;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+/* ---------------------------------------------------
+	CAROUSEL STYLE
+----------------------------------------------------- */
+.carousel-inner
+{
+	margin-top: 1.1%;
+	width: 100%;
+}
+
+.carousel-fade .carousel-inner .item 
+{
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right 
+{
+	opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right 
+{
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right 
+{
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control 
+{
+	z-index: 2;
+}
+
+/* carousel fullscreen */
+
+.carousel-fullscreen .carousel-inner .item 
+{
+	height: 77vh; 
+	background-position: center center;
+	background-size: cover;
+}
+
+/* carousel fullscreen - vertically centered caption*/
+
+.carousel-fullscreen
+{
+	margin-left: -4.4%;
+	width: 107.6%;
+}
+
+.carousel-fullscreen .carousel-caption 
+{
+	top: 29%;  
+	bottom: auto;
+	-webkit-transform: translate(0, -50%); 
+	-ms-transform: translate(0, -50%); 
+	transform: translate(0, -50%);
+}
+
+h1,h2,h3,h4 
+{
+	font-weight: 700;
+}
+
+.super-heading 
+{
+	padding-top: 5%; 
+	color: #ffff;
+	font-size: 58px; 
+	width: auto;
+}
+
+.super-paragraph 
+{
+	font-size: 30px; 
+	font-weight: 300;
+	color: #ffff;
+}
+
+.carousel-caption .super-paragraph a,
+.carousel-caption .super-paragraph a:hover
+{
+	color: #fff;
+}
+
+#carousel-example-generic 
+{
+	margin: 40px 0;
+}
+
+.demo-content 
+{
+	padding-bottom: 50px;
+	padding-top: 50px; 
+}
+
+/* ---------------------------------------------------
+	POST STYLE
+----------------------------------------------------- */
+
+.listTitle, .postTitle
+{
+	color: #339A99;
+	font-family: 'Avenir';
+}
+
+.postDate
+{
+	font-size: 0.8em;
+}
+
+.listPic, .postPic
+{
+	height: 60vh;
+	width: 60vw;
+}
+
+.moreArticles
+{
+	background-color: rgb(27,156,135);
+	color: #ffffff;
+	font-size: 1.5em;
+	margin-top: 2%;
+}
+
+.panel-body
+{
+	padding: 0;
+}
+
+.moreArticles:hover
+{
+	color: rgb(27,156,135);
+	background-color: #ffffff;
+	width: 16.6%;
+
+}
+
+.postButton
+{
+	margin-top: -3.7%;
+}
+
+/* ---------------------------------------------------
+	"BIBLIOTHEQUE" STYLE
+----------------------------------------------------- */
+
+.intervenant
+{
+	background-color : lightsalmon;
+}
+
+.sportTeach
+{
+	background-color: lightgreen;
+}
+
+
+/* ---------------------------------------------------
+	"ORGANISATION" STYLE
+----------------------------------------------------- */
+#heures
+{
+	margin-bottom : 2%;
+	width :100%;
+}
+
+.projetEduc
+{
+	margin-bottom: 2%;
+	height: 83vh;
+	width: 100%;
+}
+
+caption
+{
+	font-size: 1.5em;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	text-align: center;
+	text-decoration: underline;
+}
+
+th 
+{
+	padding-bottom: 2%;
+	text-align : center;
+}
+
+td
+{
+	text-align : center;
+	width : 1%;
+}
+
+figure /*Pour toutes les illustrations légendées*/
+{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 1%;
+	margin-left: -10%;
+}
+
+figcaption /*Paramétrage de la légende des images*/
+{
+	position: absolute; 
+	background: rgba(0,0,0,0.5);
+	color: white;
+	padding: 3% 3%;
+	opacity: 0; /*Transparente "au repos"*/
+	-webkit-transition: all 0.6s ease; /*Pour Safari - transition visuellement rapide au début et ralentie à la fin sur tous les éléments pendant 0.6 secondes*/
+	-moz-transition:    all 0.6s ease; /*Pour Firefox - transition visuellement rapide au début et ralentie à la fin sur tous les éléments pendant 0.6 secondes*/
+	-o-transition:      all 0.6s ease; /*Pour Opera - transition visuellement rapide au début et ralentie à la fin sur tous les éléments pendant 0.6 secondes*/
+	width: 85%;
+	height: 28%;
+}
+
+figcaption:before
+{
+	position: absolute;
+	top: -19%;
+	margin-left: 75%;
+	color:white;
+	background-color: rgb(52, 145, 178);
+	padding: 8px;
+	display: inline-block;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	border:3px solid white;
+}
+
+figure:hover figcaption /*Impact sur la légende au survol de l'image.*/
+{
+	opacity: 0.6;
+}
+
+.legende:before
+{ 
+	bottom: 1%;
+	left: 1%;
+}
+
+.legende figcaption /*Pour les légendes des illustrations*/
+{
+	left: 0; 
+	bottom: -30%;
+}
+
+.legende figcaption p/*Pour les légendes des illustrations*/
+{
+	color : white;	
+}
+
+.legende:hover figcaption /*¨Position de la légende lors du survol de l'image*/
+{
+	bottom:0;
+}
+
+.teacher
+{
+	width : 85%;
+	height: 85%;
+}
+
+/* ---------------------------------------------------
+	"INDEX" STYLE
+----------------------------------------------------- */
+
+.indexButton
+{
+	margin-top : 2%;
+}
+
+.listButton
+{
+	margin-left: 0%;
+	margin-top: 1%;
+}
+
+/* ---------------------------------------------------
+	"DASHBOARD" STYLE
+----------------------------------------------------- */
+
+.dashboardButton 
+{
+	margin-top : 2%;
+}
+
+/* ---------------------------------------------------
+	MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 1281px)
+{
+	#leftSide
+	{
+		height: 117px;
+	}
+
+	.listPic
+	{
+		height: 55vh;
+		width: 58vw;
+	}
+	.postPic 
+	{
+		height: 58vh;
+		width: 60vw;
+	}
+
+	.carousel-fullscreen .carousel-inner .item 
+	{
+		height: 50vh; 
+	}
+}
+@media (max-width: 1025px)
+{
+	#leftSide
+	{
+		height: 110px;
+	}
+
+	#rightSide h3
+	{
+		margin-left: 16%;
+		font-size: 1.4em;
+		margin-bottom:2%;
+		margin-top : 5%;
+	}
+
+	.fa-user
+	{
+		visibility: hidden;
+	}
+
+	.fa-calendar-alt
+	{
+		background-color: rgb(182,30,123);
+		border-radius: 100%;
+		color : white;
+		font-size: 2.8em;
+		margin-left: -15%;
+		margin-top: -12%;
+		padding: 30px;
+	}
+
+	#enveloppe
+	{
+		font-size: 1.6em;
+		left : 30%;
+		top: 65%;
+	}
+
+	#rightSide a
+	{
+		margin-left: 8%;
+	}
+
+	#logo
+	{
+		height:210% !important;
+		left: -28%;
+		top: -12%;
+		width:60% !important;
+	}
+
+	.navbar p 
+	{
+		font-size: 0.8em;
+	}
+
+	#sidebar-header
+	{
+		visibility: hidden;
+	}
+
+	.carousel-fullscreen
+	{
+		margin-left: -6%;
+		width: 110%;
+	}
+
+	.listTitle, .postTitle
+	{
+		color: #339A99;
+		display: flex;
+		font-family: 'Avenir';
+		justify-content: left;
+		width: 80vw;
+	}	
+	
+	.postPic 
+	{
+		height: 55vh;
+		width: 60vw;
+	}
+
+	figcaption
+	{
+		height: 38%;
+		padding: 3% 1%;
+		margin-bottom: -10%;
+	}
+	.legende:hover figcaption
+	{
+		bottom: 17%;
+	}
+}
+
+@media (max-width: 992px) {
+	
+	#sidebar
+	{
+		box-shadow: 0px 0px 0px;
+		margin-top : 12%;
+	}
+
+	#sidebar h3
+	{
+		background-color: #ffffff;
+		color:#339A99; 
+		display: block;
+		font-size: 1.5em;
+		margin-right: 10%;
+		margin-left: 6%;
+		padding: 10px;
+		text-align: center;
+	}
+
+	#sidebar hr
+	{
+		margin-top: 0%;
+		margin-left: 34%;
+		margin-bottom: 0%;
+		width: 24%;
+	}
+	
+	#sidebar li
+	{
+		color:black;
+		display: block;
+		font-size: 1.1em;
+		margin-right: 10%;
+		padding-bottom: 0%;
+		padding-left: 0%;
+		padding-top: 1%;
+		text-align: center;
+		width: 100%;
+	}
+
+	#leftSide
+	{
+		height: 75px;
+	}
+
+	#searchbar
+	{
+		border-radius : 5px;
+		height: 35px;
+		margin-left: 24%;
+		margin-top: 2.5%;
+		margin-bottom: 5%;
+		width : 57.5%;
+	}
+
+	#logo
+	{
+		top: -5%;
+		height:210%;
+		left: -3%;
+		position: absolute;
+		width:30%;
+		z-index:18;
+		background-size: 10%;
+	}
+
+	#rightSide
+	{
+		background-color : rgb(249,190,63);
+		margin-right: 0%;
+		height: 120px;
+	}
+
+	#rightSide h3
+	{
+		color: white;
+		margin-left: 7%;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+		margin-top : 0%;
+	}
+
+	#rightSide a
+	{
+		color: white;
+		font-size : 0.9em;
+		margin-left: 45%;
+	}
+
+	.cartouche
+	{
+		margin-left: 25%;
+		margin-top: -1%;
+		margin-bottom: 1%;
+		width : 55%;
+	}
+
+	.fa-calendar-alt
+	{
+		visibility: hidden;
+	}
+
+	.sidebar-header 
+	{
+		height: 2px;
+	}
+
+	#enveloppe
+	{
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 815px) {
+	#logo
+	{
+		height:170% !important;
+		left: 0%;
+		position: absolute;
+		top: 15%;
+		width:20% !important;
+	}
+
+	.menuButton
+	{
+		padding-bottom: 2%;
+		padding-left: 30%;
+		padding-top: 1%;
+	}
+	
+	.indexButton a
+	{
+		margin-bottom: 3px;
+	}
+
+	.listTitle, .postTitle
+	{
+		margin-left: 15vw;
+	}
+
+	.listDate
+	{
+		margin-left: 15vw;
+	}
+
+	.listPic,.postPic 
+	{
+		height: 70vh;
+		margin-left: 15vw;
+		width: 70vw;
+	}
+
+	.postTitle
+	{
+		width: 70vw;
+	}
+}
+@media (max-width: 801px) {
+	#logo
+	{
+		height:170% !important;
+		left: 0%;
+		position: absolute;
+		top: 10%;
+		width:20% !important;
+	}
+
+	.indexButton
+	{
+		margin-top : -0.5%;
+	}
+
+	.listPic, .postPic 
+	{
+		height: 30vh;
+		width: 70vw;
+	}
+
+	figcaption
+	{
+		height: 38%;
+		padding: 3% 1%;
+		margin-bottom: -10%;
+	}
+	.legende:hover figcaption
+	{
+		bottom: 17%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	#leftSide
+	{
+		height: 60px;
+		margin-right: 0%;
+	}
+
+	#searchbar
+	{
+		border-radius : 5px;
+		height: 35px;
+		margin-left: 24%;
+		margin-top: 2.5%;
+		margin-bottom: 5%;
+		width : 57.5%;
+	}
+
+	#rightSide
+	{
+		background-color :  rgb(249,190,63);
+		margin-right: 0%;
+		height: 130px;
+	}
+	
+	#rightSide h3
+	{
+		color: white;
+		margin-left: 7%;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+		margin-top : 0%;
+	}
+
+	#rightSide a
+	{
+		color: white;
+		font-size : 0.9em;
+		margin-left: 35%;
+	}
+
+	.cartouche
+	{
+		margin-left: 25%;
+		margin-top: -1%;
+		margin-bottom: 1%;
+		width : 55%;
+	}
+
+	.navbar p
+	{
+		padding-top: -10%;
+	}
+	.navbar-btn {
+		display: flex;
+	}
+
+	#content {
+		padding: 0%;
+	}
+
+	.legende
+	{
+	margin-left: 10%;
+	}
+
+	.postDate, .postTitle
+	{
+		margin-left: 10vw;
+	}
+
+	.postPic 
+	{
+		margin-left: 10vw;
+		margin-top: -1.5%;
+		height: 40vh;
+		width: 80vw;
+	}
+
+	.postTitle
+	{
+		width: 80vw;
+	}
+
+	.indexButton
+	{
+		margin-top : -0.5%;
+	}
+
+	#logo
+	{
+		top: 15%;
+		height: 160% !important;
+		left: 0%;
+		position: absolute;
+		width: 19% !important;
+	}
+
+	@media (max-width: 742px) {
+
+		.listTitle, .listDate, .listPic
+		{
+			margin-left: 10vw;
+		}
+
+		.listPic
+		{
+			height: 70vh;
+			width: 70vw;
+		}
+		.postDate, .postTitle
+		{
+			margin-left: 10vw;
+		}
+
+		.postPic 
+		{
+			height: 70vh;
+			width: 80vw;
+		}
+
+		.postTitle
+		{
+			width: 80vw;
+		}
+	}
+
+	@media (max-width: 670px) {
+		
+		#logo
+		{
+			height:160% !important;
+			left: 1%;
+			top: 15%;
+			width:20% !important;
+		}
+
+		.indexButton
+		{
+			margin-top : -0.5%;
+		}
+
+		.menuButton
+		{
+			padding-left: 28%;
+		}
+
+		.postPic 
+		{
+			height: 70vh;
+			width: 80vw;
+		}
+
+		.postTitle
+		{
+			width: 80vw;
+		}
+	}
+
+	@media (max-width: 481px) {
+
+		#logo
+		{
+			height:160% !important;
+			left: -2%;
+			top: 15%;
+			width:25% !important;
+		}
+
+		.menuButton
+		{
+			padding-left: 23%;
+		}
+
+		.postPic 
+		{
+			height: 65vh;
+			width: 80vw;
+		}
+	}
+	@media (max-width: 415px) {
+
+		.menuButton
+		{
+			padding-left: 20%;
+		}
+
+		.postPic 
+		{
+			height: 40vh;
+			width: 80vw;
+		}
+
+		.postTitle
+		{
+			width: 80vw;
+		}
+
+		.listPic
+		{
+			height: 40vh;
+		}
+
+	}
+	@media (max-width: 381px) {
+
+		#logo
+		{
+			height:138% !important;
+			left: -2%;
+			top: 45%;
+			width:25% !important;
+		}
+
+		#sidebar ul.components
+		{	
+			padding-top: 0px;
+		}
+
+		.sidebar-header 
+		{
+			margin-top:-11%;
+			height: 0;
+		}
+
+		#sidebar h3
+		{
+			font-size: 1.2em;
+		}
+
+		#sidebar li
+		{
+			font-size: 1em;
+		}
+
+		.menuButton
+		{
+			padding-left: 20%;
+		}
+
+		.postPic 
+		{
+			height: 35vh;
+			margin-left: 10vw;
+			width: 80vw;
+		}
+
+		.listPic
+		{
+			height: 35vh;
+		}
+	}
+}
