@@ -348,8 +348,8 @@
     </script>
 
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=8dzax3r89w6pf827p7ykwd3soyohjqsysbr3puloamubtf3o"></script>
-    <script src="{{ url("/js/tinyfix.js") }}"></script>
-    <script src="{{ url("/js/script.js") }}"></script>
+    <script src="{{ secure_url("/js/tinyfix.js") }}"></script>
+    <script src="{{ secure_url("/js/script.js") }}"></script>
    
 
   </body>
