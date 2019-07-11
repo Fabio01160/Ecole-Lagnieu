@@ -57,24 +57,6 @@
 
 <h1>Nos dernières actualités</h1>
 
-{{--
-<div class="col-md-4 col-sm-4">
-    <div class="thumbnail">
-        <img src="{{ url('images/01.jpg') }}" alt="San Francisco">
-        <p><strong>Roseline PIRET</strong></p>
-        <p>Présidente de l'A.P.E.L.</p>
-    </div>
-</div>
-
-<div class="col-md-4 col-sm-4">
-    <div class="thumbnail">
-        <img src="{{ url('images/01.jpg') }}" alt="San Francisco">
-        <p><strong>Roseline PIRET</strong></p>
-        <p>Présidente de l'A.P.E.L.</p>
-    </div>
-</div>
---}}
-
 @foreach($welcomePosts as $post)
 
 <div class="col-md-4 col-sm-4">
@@ -87,23 +69,5 @@
 
 @endforeach
 
-   {{--  <h1>Nos derniers articles</h1>
-
-    @foreach($welcomePosts as $post)
-            
-    <div class="col-md-4 col-sm-4
-    ">
-        <a href="post/{{$post->id}}"> <h2 class='postTitle'> {{$post->title}} </h2> </a>
-        
-        @if ($post->category) {{-- Display of the category --}}
-           {{--<p> <span class='bold'> Article de la catégorie </span> "<em>{{ $post->category->name }}</em>" créé le {{ $post->created_at }} </p>
-        @endif
-
-        <a href="post/{{$post->id}}"> <img class="postPic" src="{{ url('images/'.$post->image) }}" title="{{$post->title}}"> </a>
-
-        <hr>
-    </div>
-
-    @endforeach--}}
 @endsection
 

@@ -28,7 +28,7 @@
                             <div class="col-md-offset-2 col-md-5 ">
                             <input id="searchbar" name="search" type="text" placeholder="RECHERCHER"/>
                         </form>
-                        <a href="{{ url('/') }}"><img id="logo" src="{{ url('images/logoRond.png') }}"></a>
+                        <a href="{{ url('/') }}"><img id="logo" src="{{ secure_url('images/logoRond.png') }}"></a>
                         <a href="{{ url('/contact') }}"><i class="fas fa-envelope" id="enveloppe"></i></a>
                     </div>
                 </div>
