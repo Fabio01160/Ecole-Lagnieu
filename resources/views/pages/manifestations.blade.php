@@ -26,8 +26,4 @@
     </div>
     @endforeach
 
-    {{-- <div class="col-xs-offset-3 col-sm-offset-5 col-md-offset-5">
-        <a class='btn btn-default moreArticles' href="{{ $classRoom->slug }}/1">Plus d'articles </a>
-    </div> --}}
-
 @endsection

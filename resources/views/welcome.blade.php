@@ -55,18 +55,44 @@
         </a>
 </div>
 
-<article id="notreEcole">
+<h1>Nos dernières actualités</h1>
 
-    <h1>Notre école</h1>
-    {!! $label["Accueil"] !!}
+{{--
+<div class="col-md-4 col-sm-4">
+    <div class="thumbnail">
+        <img src="{{ url('images/01.jpg') }}" alt="San Francisco">
+        <p><strong>Roseline PIRET</strong></p>
+        <p>Présidente de l'A.P.E.L.</p>
+    </div>
+</div>
 
-</article>
+<div class="col-md-4 col-sm-4">
+    <div class="thumbnail">
+        <img src="{{ url('images/01.jpg') }}" alt="San Francisco">
+        <p><strong>Roseline PIRET</strong></p>
+        <p>Présidente de l'A.P.E.L.</p>
+    </div>
+</div>
+--}}
+
+@foreach($welcomePosts as $post)
+
+<div class="col-md-4 col-sm-4">
+    <div class="thumbnail">
+        <a href="post/{{$post->id}}"> <img class="postPic" src="{{ url('images/'.$post->image) }}" title="{{$post->title}}"> </a>
+        <a href="post/{{$post->id}}"> <h2 class='postTitle'> {{$post->title}} </h2> </a>
+        <p> <span class='bold'> Mis en ligne le {{ $post->created_at->format('d/m/Y') }} </p>
+    </div>
+</div>
+
+@endforeach
 
    {{--  <h1>Nos derniers articles</h1>
 
     @foreach($welcomePosts as $post)
             
-    <div class="col-md-offset-1 col-md-10">
+    <div class="col-md-4 col-sm-4
+    ">
         <a href="post/{{$post->id}}"> <h2 class='postTitle'> {{$post->title}} </h2> </a>
         
         @if ($post->category) {{-- Display of the category --}}

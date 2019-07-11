@@ -128,11 +128,12 @@
                                     <a href="{{ url('/dashboard') }}"><li class="noHover"><span class="littleDays">Aller au panneau de contrôle</span></li></a>
                                 @endif
                                     <a href="{{ url('/sponsor') }}"><li class="noHover"><span class="littleDays">Nos sponsors</span></li></a>
+                                <a href="{{ url('/mentions') }}"><li class="noHover"><span class="littleDays">Mentions légales</span></li></a>
                                 @if (Auth::check())
-                                    <form class="menuButton" action="{{ url('/logout') }}" method='POST'>
-                                        {!! csrf_field() !!}
-                                        <input class="btn btn-danger" style='margin-left: 17%;' type="submit" value="Se déconnecter">
-                                    </form>
+                                <form class="menuButton" action="{{ url('/logout') }}" method='POST'>
+                                    {!! csrf_field() !!}
+                                    <input class="btn btn-danger" style='margin-left: 17%;' type="submit" value="Se déconnecter">
+                                </form>
                                 @endif
                             </ul>
                         </nav>
@@ -177,13 +178,23 @@
         }
 
         $('#buttonArticle').on('click', function(e) {
-            
-            if ($('input[name="image"]').get(0).files.length<1)
+            if (!$('input[name="title"]').val())
             {
                 e.preventDefault();
                 swal({
+                    title: "Attention il manque le titre de l'article !",
+                    text: "Votre article doit avoir un titre.",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+            }
+
+            else if ($('input[name="image"]').get(0).files.length<1) {
+                e.preventDefault();
+                swal({
                     title: "Attention il manque une image !",
-                    text: "Tous les articles doivent comporter une image.",
+                    text: "Votre article doit comporter une image.",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,

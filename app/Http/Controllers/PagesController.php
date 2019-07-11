@@ -25,7 +25,7 @@ class PagesController extends Controller
 
     public function welcomePosts()//Fonction pour toutes les classes 
     {
-        $welcomePost=Post::with('category')->orderBy('created_at', 'desc')->limit(3)->get(); //Sort by date of creation and limit to the 3 latest.
+        $welcomePost=Post::with('category')->where('category_id',11)->orderBy('created_at', 'desc')->limit(3)->get(); //Sort by date of creation and limit to the 3 latest.
         return view ('welcome',['welcomePosts'=>$welcomePost]);
     }
 
@@ -106,14 +106,6 @@ class PagesController extends Controller
         return view ('pages/bibliotheque');
     }
 
-    /*public function menusFood()
-    {
-        $foodPost=Post::whereHas('category',function($query) {
-            $query->where('name','menus');
-        })->get();
-        return view ('pages/menus');
-    }*/
-
     public function catechesis()
     {
         return view ('pages/catechese');
@@ -155,6 +147,11 @@ class PagesController extends Controller
     public function sponsor()
     {
         return view ('pages/sponsor');
+    }
+
+    public function mentions()
+    {
+        return view ('pages/mentions');
     }
 
     public function noResults()

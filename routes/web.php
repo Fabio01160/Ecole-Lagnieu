@@ -30,7 +30,7 @@ Route::get("posts",function (){
     return view ("posts.index");
 });
 
-//Routes vers les pages 
+//Routes to the pages 
 
 //Section "Nouvelle famille"
 Route::get('associations','PagesController@association');
@@ -64,8 +64,11 @@ Route::get('createuser','PagesController@createUser');
 Route::get('search', 'SearchController@search');
 Route::get('noResults', 'PagesController@noResults');
 Route::get('post/{id}','PagesController@newsDisplay');
+
+//Others
 Route::get('sponsor','PagesController@sponsor');
 Route::post('contact','PagesController@sendEmail');
 Route::get('contact','PagesController@contact');
+Route::get('mentions','PagesController@mentions');
 
 Auth::routes();
