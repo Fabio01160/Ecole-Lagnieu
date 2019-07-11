@@ -4,9 +4,9 @@
 @import url(https://fr.allfont.net/allfont.css?fonts=little-days-alt);
 @import "https://fonts.googleapis.com/css?family=Avenir:300,400,500,600,700";
 
-@font-face{
+@font-face {
 	font-family:'Little Days Alt';
-	src: "{{ url('fonts/Little Days Alt.ttf') }}";
+	src: "{{ secure_url('fonts/Little Days Alt.ttf') }}";
 }
 
 body 
