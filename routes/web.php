@@ -46,6 +46,7 @@ Route::get('dossiersDeRentree','PagesController@schoolStartFile')->middleware("a
 Route::get('lienEcoleCollege','PagesController@linkBtwSchools')->middleware("auth");
 Route::get('manifestations','PagesController@events')->middleware("auth");
 Route::get('reglementIntParent','PagesController@internalRules')->middleware("auth");
+Route::get('lastNews','PagesController@lastNews')->middleware("auth");
 
 //Section "Elève"
 Route::get('reglementIntEleve','PagesController@codeOfConduct')->middleware("auth");
@@ -54,6 +55,7 @@ Route::get('menus','PagesController@menusFood')->middleware("auth");
 Route::get('catechese','PagesController@catechesis')->middleware("auth");
 Route::get('maClasse','PagesController@inMyClassroom')->middleware("auth");
 Route::get('classe/{niveau}/{more?}','PagesController@classrooms')->middleware("auth");//Paramètres "more" optionnel
+
 
 // Section Dashboard
 Route::get('dashboard','PagesController@dashboard');

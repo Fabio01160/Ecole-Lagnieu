@@ -23,7 +23,7 @@ class PagesController extends Controller
      });
     }
 
-    public function welcomePosts()//Fonction pour toutes les classes 
+    public function welcomePosts()
     {
         $welcomePost=Post::with('category')->where('category_id',11)->orderBy('created_at', 'desc')->limit(3)->get(); //Sort by date of creation and limit to the 3 latest.
         return view ('welcome',['welcomePosts'=>$welcomePost]);
@@ -93,6 +93,12 @@ class PagesController extends Controller
     {
         return view ('pages/reglementIntParent');
     }
+
+    public function lastNews()
+    {
+        $lastNews=Post::with('category')->where('category_id',11)->orderBy('created_at', 'desc')->get(); //Sort by date of creation.
+        return view ('pages/lastNews',['lastNews'=>$lastNews]);
+    }
     
     //"Elèves" section
 
@@ -130,7 +136,6 @@ class PagesController extends Controller
     public function newsDisplay(Request $request)//Affiche les articles un par un dans une vue.
     {
         $displayedPost=Post::find($request->id);
-          
         return view ('pages/newsdisplay', ['displayedPost'=>$displayedPost]);
     }
 

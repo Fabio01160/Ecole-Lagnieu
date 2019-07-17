@@ -103,6 +103,7 @@
                                     <a href="{{ url('/dossiersDeRentree') }}"><li>Dossiers de rentrée</li></a>
                                     <a href="{{ url('/lienEcoleCollege') }}"><li>Lien école-collège</li></a>
                                     <a href="{{ url('/reglementIntParent') }}"><li>Règlement intérieur</li></a>
+                                    <a href="{{ url('/lastNews') }}"><li>Actualités</li></a>
                                 </ul>
 
                                 <h3><a href="#redTapeSubmenu" data-toggle="collapse" aria-expanded="false"><span class="littleDays"> Je suis... </span><br> <span class="avenir">ELEVE </span></a> </h3>
